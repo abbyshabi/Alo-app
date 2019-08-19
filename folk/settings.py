@@ -68,11 +68,13 @@ INSTALLED_APPS = [
     'folktale.apps.FolktaleConfig',
     'django_forms_bootstrap',
     'rest_framework',
+    'corsheaders',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
