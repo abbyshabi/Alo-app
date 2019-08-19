@@ -11,7 +11,7 @@ class CharacterListView(ListAPIView):
 
 class CharacterDetailView(RetrieveAPIView):
     queryset = Character.objects.all()
-    serializer_class = CharacterSerializer
+    serializer_class = CharacterSerializern
 
 class FolktaleListView(ListAPIView):
     queryset =Folktale.objects.all()
