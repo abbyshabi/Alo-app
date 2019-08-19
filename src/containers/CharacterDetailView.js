@@ -11,7 +11,7 @@ class CharacterDetail extends React.Component {
   
     componentDidMount() {
       const characterID = this.props.match.params.characterID;
-      axios.get(`http://127.0.0.1:8000/api/characters/${characterID}`).then(res => {
+      axios.get(`https://alo-app.herokuapp.com/api/characters/${characterID}`).then(res => {
         this.setState({
           character: res.data
         });

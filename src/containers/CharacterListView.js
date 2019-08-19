@@ -21,7 +21,7 @@ class CharacterList extends React.Component {
         characters:[]
     }
     componentDidMount(){
-        axios.get('http://127.0.0.1:8000/api/characters')
+        axios.get('https://alo-app.herokuapp.com/api/characters')
             .then(res =>{
                 this.setState({
                     characters:res.data
