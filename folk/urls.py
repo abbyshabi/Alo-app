@@ -21,7 +21,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^',include('folktale.urls')),
     url(r'^api/',include('folktale.api.urls')),
-    # url(r'^api-auth/',include('rest_framework.urls')),
+    url(r'^api-auth/',include('rest_framework.urls')),
     re_path('.*', TemplateView.as_view(template_name='index.html')),
 ]
 
