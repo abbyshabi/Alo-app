@@ -10,7 +10,7 @@ django-cors-headers==3.0.2
 django-crispy-forms==1.7.2
 django-forms-bootstrap==3.1.0
 django-heroku==0.3.1
-django-registration==2.4.1
+django-registration==3.1.2
 django-rest-framework==0.1.0
 django-tinymce==2.8.0
 django-widget-tweaks==1.4.3
